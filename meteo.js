@@ -4,7 +4,7 @@ function showCity() {
 
 
 
-    //recuperer la liste des villes disponible 
+    //recuperer la liste des villes disponibles 
     let cities = document.getElementsByClassName("city");
 
     document.getElementById("ville").innerHTML='';
@@ -12,13 +12,13 @@ function showCity() {
     //  parcourir la liste des villes
     for (i=0; i<3; i++) {
 
-        //si la ville choisi corespond 
+        //si la ville choisie corespond 
         if (cities[i].id == nomVilleSelectionnee) {
            
             cities[i].style.display= "block";
             document.getElementById("ville").innerHTML=nomVilleSelectionnee;
 
-        //si la ville choisi corespond pas    
+        //si la ville choisie ne corespond pas    
         } else {
 	        cities[i].style.display= "none";
         }
@@ -35,7 +35,8 @@ function showCity() {
     //appel de l'API avec la fonction fetch
     fetch(url).then(response => response.json()).then(data => {
         const { main, name, sys, weather } = data;
-    //affichage des resultats sous forme d'une alerte 
+	    
+    //affichage des resultats sous forme d'une alerte vu qu'on a pas de temps pour améliorer le code comme souhaité alors on a utilisé une alert pour ça
     alert (`${Math.round(main.temp)}  ${weather[0]["description"]}`);
     });
 }
