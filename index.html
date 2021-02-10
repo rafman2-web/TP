@@ -13,11 +13,11 @@
 	
 	<h1>My TP Météo HTML</h1>
 
-	<!--les des villes disponibles à choisir par l'utilisateur-->
+	<!--les villes disponibles à choisir par l'utilisateur-->
 	<div id="menu">
 		<label for="ville">Choisir une ville:</label>
 
-		<!--les deroulente avec une fonction JS pour envoyer la valeur choisit à meteo.js -->
+		<!--la liste avec une fonction JS pour envoyer la valeur choisie à meteo.js -->
 		<select onchange = showCity() id="container" >
     		<option value="">--Please choose an option--</option>
     		<option value="Paris">Paris</option>
@@ -26,12 +26,12 @@
 		</select>		
 	</div>
     
-	<!--affiche la ville selectionée (nom)-->
+	<!--afficher la ville selectionée (nom)-->
 	<div id="selected">
 		<p>You selected : </p><p id="ville"></p>
 	</div>
 
-	<!--affiche la meteo de la ville selectionée -->
+	<!--afficher la meteo de la ville selectionée -->
 	<div class="container">
 
 		<div class ="city " id="Paris">
