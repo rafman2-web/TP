@@ -37,6 +37,6 @@ function showCity() {
         const { main, name, sys, weather } = data;
 	    
     //affichage des resultats sous forme d'une alerte vu qu'on a pas de temps pour améliorer le code comme souhaité alors on a utilisé une alert pour ça
-    alert (`${Math.round(main.temp)}  ${weather[0]["description"]}`);
+    alert (`${(data.name)} , ${Math.round(main.temp)} , ${weather[0]["description"]}`);
     });
 }
