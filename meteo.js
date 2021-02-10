@@ -30,7 +30,7 @@ function showCity() {
     const apiKey = "eea8693d59ca665a1613694a7748a55e";
 
      //URL API avec variable "nom de la ville" et "clé API"
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${nomVilleSelectionnee}&appid=${apiKey}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${nomVilleSelectionnee}&appid=${apiKey}&units=metric&lang=fr`;
     
     //appel de l'API avec la fonction fetch
     fetch(url).then(response => response.json()).then(data => {
