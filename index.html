@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	 <meta charset="UTF-8">
+	 <title> Projet météo</title>
+	 <link rel="stylesheet" href="meteo.css">
+	 <script type="text/javascript" src="meteo.js"></script>
+</head>
+
+
+<body >
+	
+	<h1>My TP Météo HTML</h1>
+
+	<!--les des villes disponibles à choisir par l'utilisateur-->
+	<div id="menu">
+		<label for="ville">Choisir une ville:</label>
+
+		<!--les deroulente avec une fonction JS pour envoyer la valeur choisit à meteo.js -->
+		<select onchange = showCity() id="container" >
+    		<option value="">--Please choose an option--</option>
+    		<option value="Paris">Paris</option>
+    		<option value="Lyon">Lyon</option>
+    		<option value="Rennes">Rennes</option>
+		</select>		
+	</div>
+    
+	<!--affiche la ville selectionée (nom)-->
+	<div id="selected">
+		<p>You selected : </p><p id="ville"></p>
+	</div>
+
+	<!--affiche la meteo de la ville selectionée -->
+	<div class="container">
+
+		<div class ="city " id="Paris">
+			<h2 > Paris </h2>     
+			<p >2°, pluvieux </p>
+			<img src="pluvieux.png" alt ="image qui represente un temps pluvieux" width= "50" >
+		</div>
+
+
+		<div class ="city " id="Lyon">
+			<h2> Lyon</h2>
+			<p>30°, orageux </p>
+			<img src="orageux.png" alt ="image qui represente un temps orageux" width= "50" >
+		</div>
+
+
+		<div class ="city  " id="Rennes" >
+			<h2> Rennes </h2>
+			<p>-5°, ensoleillé </p>
+			<img src="ensoleillé.png" alt ="image qui represente un temps ensoleillé" width= "50" >
+		</div>
+
+	</div>
+
+
+
+	<footer>
+   		<p>  
+			nom 1 <br>
+			nom 2 <br> 
+			Icone météo par 
+			<a href="C:\Users\Perso\Desktop\tp rafik\pluit.png">Nook Fulloption</a>
+   		</p>   
+	</footer>  
+</body>
+</html>

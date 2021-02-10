@@ -1,0 +1,80 @@
+
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    background-color :black;   
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+} 
+
+#menu {
+    padding: 0px;
+    margin: 5px;
+    display: flex;
+}
+
+footer {
+    background-color :rgb(197, 195, 195);   
+    color: rgb(143, 138, 138);
+    margin: 5px;
+    padding: 20px;
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.city {
+ 
+    background-color : rgb(190, 184, 184);
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    flex-grow : 1;
+    display:none;
+    
+}
+
+#selected{
+    display: flex;
+    margin: 5px;
+}
+
+
+
+/*
+
+.composant:nth-child(1)
+{
+    background-color : rgb(190, 184, 184);
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    flex-grow : 1;
+}
+
+.composant:nth-child(2)
+{
+    background-color : rgb(190, 184, 184);
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    flex-grow : 1;
+}
+
+
+.composant:nth-child(3)
+{
+    background-color : rgb(190, 184, 184);
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+flex-grow : 1;
+}
+*/
